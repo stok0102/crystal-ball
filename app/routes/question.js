@@ -24,10 +24,10 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
     save(params) {
-      var newComment = this.store.createRecord('answer', params);
+      var newAnswer = this.store.createRecord('answer', params);
       var question = params.question;
-      question.get('answers').addObject(newComment);
-      newComment.save().then(function() {
+      question.get('answers').addObject(newAnswer);
+      newAnswer.save().then(function() {
         return question.save();
       });
       this.transitionTo('question', params.question);

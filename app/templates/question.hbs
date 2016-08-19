@@ -1,6 +1,8 @@
 {{question-tile question=model destroyQuestion="destroyQuestion" update="update"}}
 {{edit-question model=model update="update"}}
+{{new-answer save="save" question=model}}
+
 <h3>Answers</h3>
 {{#each model.answers as |answer|}}
   {{answer-tile answer=answer destroyAnswer="DestroyAnswer"}}
-{{/each}}  
+{{/each}}
