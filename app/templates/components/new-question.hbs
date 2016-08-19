@@ -1,1 +1,21 @@
-{{yield}}
+<h1 class="text-center">New Question</h1>
+ <div>
+   <form class="text-center">
+     <div class="form-group">
+       <label for="author">Author</label>
+       {{input value=author id="author"}}
+     </div>
+
+     <div class="form-group">
+       <label for="title">Title</label>
+       {{input value=title id="title"}}
+     </div>
+
+     <div class="form-group">
+       <label for="content">Notes</label>
+       {{textarea value=content id="content"}}
+     </div>
+
+     <button class="btn btn-success" {{action 'save'}}>Ask</button>
+   </form>
+ </div>
