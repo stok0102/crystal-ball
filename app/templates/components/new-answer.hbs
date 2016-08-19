@@ -1,0 +1,16 @@
+<h3>New Answer</h3>
+   <div>
+     <form>
+       <div class="form-group">
+         <label class="sr-only" for="username">Username:</label>
+         {{input value=username id="username" placeholder="Username"}}
+       </div>
+
+       <div class="form-group">
+         <label class="sr-only" for="answerContent">Answer:</label>
+         {{textarea cols="70" rows="5" value=answerContent id="answerContent" placeholder="Answer"}}
+       </div>
+
+       <button {{action 'save'}}>Save</button>
+     </form>
+   </div>

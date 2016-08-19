@@ -1,2 +1,6 @@
-{{question-tile question=model update="update"}}
+{{question-tile question=model destroyQuestion="destroyQuestion" update="update"}}
 {{edit-question model=model update="update"}}
+<h3>Answers</h3>
+{{#each model.answers as |answer|}}
+  {{answer-tile answer=answer destroyAnswer="DestroyAnswer"}}
+{{/each}}  
