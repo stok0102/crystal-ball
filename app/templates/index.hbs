@@ -1,1 +1,7 @@
-{{outlet}}
+<h3>Recent Questions</h3>
+<br>
+<div class="wrap">
+  {{#each model as |question|}}
+    {{question-preview question=question}}
+  {{/each}}
+</div>
