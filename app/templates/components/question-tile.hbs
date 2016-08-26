@@ -1,4 +1,3 @@
-<div class="container">
   <div class="question">
     <h3>{{question.title}}</h3>
     <h5>{{question.author}} -- {{answerCount}} Answers</h5>
@@ -6,6 +5,5 @@
       {{question.content}}
     </p>
   </div>
-  <button class="btn btn-danger center-block" {{action 'delete' question}}>Delete</button>
-  <button {{action 'addToFaves' question}}>Add Question to Favorites</button><br>
-</div>
+  <button class="btn btn-danger" {{action 'delete' question}}>Delete</button>
+  <button class="btn btn-primary" {{action 'addToFaves' question}}>Add Question to Favorites</button><br>

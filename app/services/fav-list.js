@@ -5,9 +5,15 @@ export default Ember.Service.extend({
 
   add(question) {
     if (this.items.includes(question)) {
-      
+
     } else {
       this.get('items').pushObject(question);
+    }
+  },
+
+  remove(question) {
+    if (this.items.includes(question)) {
+      this.get('items').removeObject(question);
     }
   }
 });
