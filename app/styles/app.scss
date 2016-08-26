@@ -1,3 +1,17 @@
 #editToggle {
   margin-top: 20px;
 }
+
+body {
+  background-color: #ffff99;
+}
+
+.answers {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+}
+
+.answer {
+  padding: 20px;
+}
