@@ -1,7 +1,12 @@
-<h3>Recent Questions</h3>
-<br>
+
 <div class="wrap">
+  <h3>Recent Questions</h3>
+  <hr>
   {{#each model as |question|}}
     {{question-preview question=question}}{{question-trending question}}
   {{/each}}
+  <div class="">
+    {{display-faves}}
+  </div>
+
 </div>
