@@ -5,6 +5,8 @@ export function questionTrending(params/*, hash*/) {
 
   if (question.get('answers').get('length') >= 3) {
     return Ember.String.htmlSafe('<span class="glyphicon glyphicon-fire"></span>');
+  } else if (question.get('answers').get('length') < 1) {
+    return Ember.String.htmlSafe('<span class="glyphicon glyphicon-baby-formula"></span>');
   }
 }
 
