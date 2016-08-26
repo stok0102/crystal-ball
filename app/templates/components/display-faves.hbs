@@ -2,5 +2,5 @@
 
 {{#each favList.items as |question|}}
   <p>{{question-preview question=question}}</p>
-  <button {{action 'removeFromFaves' question}}>Remove from Favorites</button>
+  <button class="btn btn-danger"{{action 'removeFromFaves' question}}>Remove from Favorites</button>
 {{/each}}
