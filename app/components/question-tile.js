@@ -3,6 +3,11 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   favList: Ember.inject.service(),
 
+  answerCount: Ember.computed('question.answers', function() {
+    var answerArray = this.get('question.answers.length');
+    return answerArray;
+  }),
+
   actions: {
     update(model, params) {
       this.sendAction('update', model, params);
