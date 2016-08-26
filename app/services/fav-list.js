@@ -4,6 +4,10 @@ export default Ember.Service.extend({
   items: [],
 
   add(question) {
-    this.get('items').pushObject(question);
+    if (this.items.includes(question)) {
+      
+    } else {
+      this.get('items').pushObject(question);
+    }
   }
 });

@@ -1,5 +1,5 @@
 <h3>Favorite Questions</h3>
 
 {{#each favList.items as |question|}}
-  {{question.title}} (asked by) {{question.author}}
+  <p>{{question-preview question=question}}</p>
 {{/each}}

@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('question', {path: '/question/:question_id'});
   this.route('new-question');
   this.route('add-question');
+  this.route('favorites');
 });
 
 export default Router;
